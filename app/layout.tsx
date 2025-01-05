@@ -16,6 +16,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "PicShrink",
   description: "Image Compressor App",
+  // Add favicon to metadata
+  icons: {
+    icon: "/Camera.png",  // Path to the image you want to use as the favicon
+  },
 };
 
 export default function RootLayout({
