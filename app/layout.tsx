@@ -17,9 +17,8 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "PicShrink",
   description: "Image Compressor App",
-  // Add favicon to metadata
   icons: {
-    icon: "/Camera.png", // Path to the image you want to use as the favicon
+    icon: "/Camera.png",
   },
 };
 
@@ -31,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/* AdSense script */}
+        {/* Google AdSense Meta Tag */}
+        <meta name="google-adsense-account" content="ca-pub-8201720283335151" />
+        {/* Google AdSense Script */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201720283335151"
