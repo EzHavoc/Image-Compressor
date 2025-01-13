@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Head from "next/head";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   description: "Image Compressor App",
   // Add favicon to metadata
   icons: {
-    icon: "/Camera.png",  // Path to the image you want to use as the favicon
+    icon: "/Camera.png", // Path to the image you want to use as the favicon
   },
 };
 
@@ -29,6 +30,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* AdSense script */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8201720283335151"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
