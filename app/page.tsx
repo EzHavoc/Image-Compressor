@@ -1,5 +1,5 @@
 import { ImageCompressor } from "@/components/image-compressor"
-
+import AdsComponent from "@/components/AdsComponent"
 export default function Page() {
   return (
     <main className="min-h-screen bg-[#f4e1ff] p-4 md:p-8">
@@ -13,6 +13,7 @@ export default function Page() {
           />
         </h1>
         <ImageCompressor />
+        <AdsComponent dataAdSlot='4228595056' />
       </div>
     </main>
   )
