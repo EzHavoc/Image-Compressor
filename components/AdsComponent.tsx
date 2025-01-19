@@ -2,11 +2,14 @@
 
 import React, { useEffect } from 'react';
 
-interface AdsComponentProps {
-    dataAdSlot: string; // Ensure the dataAdSlot type matches your expected usage
+// Extend the Window interface to include adsbygoogle
+declare global {
+    interface Window {
+        adsbygoogle: any[];
+    }
 }
 
-const AdsComponent: React.FC<AdsComponentProps> = ({ dataAdSlot }) => {
+const AdsComponent: React.FC<{ dataAdSlot: string }> = ({ dataAdSlot }) => {
     useEffect(() => {
         try {
             (window.adsbygoogle = window.adsbygoogle || []).push({});
