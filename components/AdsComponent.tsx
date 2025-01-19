@@ -2,9 +2,11 @@
 
 import React, { useEffect } from 'react';
 
-const AdsComponent = (props) => {
-    const { dataAdSlot } = props;
+interface AdsComponentProps {
+    dataAdSlot: string; // Ensure the dataAdSlot type matches your expected usage
+}
 
+const AdsComponent: React.FC<AdsComponentProps> = ({ dataAdSlot }) => {
     useEffect(() => {
         try {
             (window.adsbygoogle = window.adsbygoogle || []).push({});
